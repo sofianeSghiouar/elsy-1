@@ -9,7 +9,7 @@ class Box extends React.Component {
       <div className="box col-sm-3 col-6">
 
         <span
-          style={{ fontSize: 100, color: this.props.color }}
+          style={{ fontSize: 100, color: this.props.color, transform: this.props.rotate, transition: this.props.transition}}
           class="material-icons"
         >
           {this.props.icon}
