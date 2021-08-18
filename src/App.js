@@ -11,8 +11,6 @@ const stepsMax = 50000
 
 class App extends React.Component {
   render() {
-    const boolValue = false
-
     return (
       <div className="container-fluid">
         <div className="row">
@@ -22,16 +20,19 @@ class App extends React.Component {
         </div>
 
         <div className="row">
+          {/* Water */}
           <Box icon="local_drink" color="#3A85FF" value={1.5} unit="L" />
+
+          {/* Steps */}
           <Box icon="directions_walk" color="black" value={3000} unit="steps" />
+
+          {/* Heart */}
           <Box icon="favorite" color="red" value={120} unit="bpm" />
+
+          {/* Temperature */}
           <Box icon="wb_sunny" color="yellow" value={-10} unit="°C" />
         </div>
-        
-        {/* <div></div> = <div /> */}
-
       </div>
-
     );
   }
 }
